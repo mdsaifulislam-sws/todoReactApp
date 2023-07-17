@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  overflow-x: hidden !important;
+}
+
+@layer components {
+  .li-item {
+    @apply mx-8 py-2 px-4 border text-justify border-slate-500 rounded-md flex justify-between items-center gap-3 capitalize;
+  }
+  .delete-btn {
+    @apply bg-red-500 text-white px-3 py-1 text-sm rounded-md;
+  }
+  .ul-wrapper {
+    @apply w-3/5 max-md:w-11/12 m-auto py-4 space-y-2;
+  }
+}
